@@ -39,15 +39,16 @@ Last Updated on \today
 \end{textblock}}
 
 % Name command
-\newcommand{\namesection}[3]{
+\newcommand{\namesection}[4]{
 \centering{
 \fontsize{30pt}{30pt}
-\fontspec[Path = fonts/source-han-serif/]{SourceHanSerifSC-Bold}\selectfont #1 
+\fontspec[Path = fonts/source-han-serif/]{SourceHanSerifSC-Bold}\selectfont #1
 \fontspec[Path = fonts/source-han-serif/]{SourceHanSerifSC-Bold}\selectfont #2
+\fontspec[Path = fonts/source-han-serif/]{SourceHanSerifSC-Bold}\selectfont #3
 } \\[5pt]
 \centering{
 \color{headings}
-\fontspec[Path = fonts/source-han-serif/]{SourceHanSerifSC-Medium}\fontsize{11pt}{11pt}\selectfont #3}
+\fontspec[Path = fonts/source-han-serif/]{SourceHanSerifSC-Medium}\fontsize{11pt}{11pt}\selectfont #4}
 \noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}}
 \vspace{-15pt}
 }
