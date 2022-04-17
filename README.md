@@ -4,4 +4,4 @@
 
 Based on https://github.com/dyweb/Deedy-Resume-for-Chinese
 
-[ENG](./docs/resume.pdf) | [CN](./docs/resume-cn.pdf)
+[ENG](./docs/resume.pdf) | [中文](./docs/resume-cn.pdf)
