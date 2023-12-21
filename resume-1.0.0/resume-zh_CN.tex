@@ -3,17 +3,16 @@
 % !Mode:: "TeX:UTF-8"
 
 \documentclass{resume}
-% \usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
-% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
-\usepackage{linespacing_fix} % disable extra space before next section
-\usepackage{cite}
+
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
 
 \begin{document}
 \lastupdated
-\pagenumbering{gobble} % suppress displaying page number
+% 不显示页码
+\pagenumbering{gobble}
 
-\namesection{牛}{志}{宏}{ \urlstyle{same}\href{zone.niuzh@hotmail.com}{@zone.niuzh} | 156 6720 0505 | Github/MRNIU | UTC+8
-}
+\namesection{牛}{志}{宏}{\urlstyle{same}\href{zone.niuzh@hotmail.com}{zone.niuzh@hotmail.com} | 156 6720 0505 | Github/MRNIU | UTC+8}
 
 \section{教育背景}
 \datedsubsection{\textbf{西安石油大学} 计算机科学与技术 \textit{工学学士}}{2017.9}
@@ -21,7 +20,7 @@
 \section{技术能力}
 \begin{itemize}[parsep=0.2ex]
   \item \textbf{编程语言}: C/C++，Python，Go，Shell，x86 ASM，ARM ASM，RISCV ASM
-  \item \textbf{操作系统与工具}: Linux/macOS/Windows，Git，Docker，CMake
+  \item \textbf{操作系统与工具}: Linux/macOS/Windows，Git，Docker，CMake，\LaTeX
   \item \textbf{DevOps}: Travis CI，GitHub Action，Jenkins
   \item \textbf{领域}: Embedded System，Kernel，Edge Computing，Compiler，Computer Graphics
 \end{itemize}
@@ -29,7 +28,7 @@
 \section{项目经历}
 \datedsubsection{\textbf{ThoughtWorks | 某电力行业央企控股集团 边缘计算应用开发} 资深开发工程师}{2023.6 - 至今}
 \begin{itemize}
-  \item 该企业已有的开发流程成本高、效率低，严重影响企业的生产流程，本项目的目标是结合敏捷实践降本\\增效，带领企业团队熟悉现代开发方式。
+  \item 该企业已有的开发流程成本高、效率低，严重影响企业的生产流程，本项目的目标是结合敏捷实践降本增效，带领企业团队熟悉现代开发方式。
   \item 负责实现电力行业标准 645-97/645-07/698-45 协议的事件采集相关功能。
   \item 负责大规模高准度低时延采集系统架构设计。
   \item 技术栈 C，C++，ARM
@@ -37,9 +36,9 @@
 
 \datedsubsection{\textbf{ThoughtWorks | 某央企控股集团 可观测审计文件系统} 资深开发工程师 | 负责人}{2021.10 - 至今}
 \begin{itemize}
-  \item 该项目主要是针对信创平台（中科方德、银河麒麟、x86、龙芯 MIPS、ARM64）实现基于 fuse 的可\\观测审计系统。
-  \item 该集团业务有严格的保密需求，要求监控文件的打开、关闭、读写、复制粘贴等操作，对加密文件需要\\支持用户无感知的透明加解密方案。
-  \item 参与项目的全流程，包括需求评审、设计评审，制定测试计划，设计和执行测试用例，及测试回归，\\进行缺陷跟踪和软件质量分析等。
+  \item 该项目主要是针对信创平台（中科方德、银河麒麟、x86、龙芯 MIPS、ARM64）实现基于 fuse 的可观测审计系统。
+  \item 该集团业务有严格的保密需求，要求监控文件的打开、关闭、读写、复制粘贴等操作，对加密文件需要支持用户无感知的透明加解密方案。
+  \item 参与项目的全流程，包括需求评审、设计评审，制定测试计划，设计和执行测试用例，及测试回归，进行缺陷跟踪和软件质量分析等。
   \item 负责实现基于 fuse 的用户态文件系统监控审计全功能开发。
   \item 负责实现基于 X11 的用户操作监控功能。
   \item 负责实现用户操作审计。
@@ -55,8 +54,8 @@
 \datedsubsection{\textbf{ThoughtWorks | 国内某智能穿戴设备研发} 资深开发工程师}{2021.9 - 2021.10}
 \begin{itemize}
   \item 该项目主要是对某国内厂商已有的穿戴设备上的应用进行重构。
-  \item 在以往的开发中，此厂商主要采用 c++ 和 mvp 架构来开发自己的手表应用，但是随着产品的增多，\\
-    这种架构面临着维护困难，冲突多，开发缓慢等问题。为此开发了一套 MVVM 架构的手表应用开发框架，\\
+  \item 在以往的开发中，此厂商主要采用 c++ 和 mvp 架构来开发自己的手表应用，但是随着产品的增多，
+    这种架构面临着维护困难，冲突多，开发缓慢等问题。为此开发了一套 MVVM 架构的手表应用开发框架，
     页面基于 html/css 开发，后端封装可复用的组件，整个项目需要不断的催熟框架以及重构应用。
   \item 负责应用的重构，前端编写，以及后端数据联调。
   \item 与框架团队交流，催熟组件，bug修复。
@@ -65,13 +64,14 @@
 
 \datedsubsection{\textbf{Google Summer of Code | 为 Arduino Portenta H7 移植 FreeRTOS} 负责人}{2020.6 - 2020.9}
 \begin{itemize}
-  \item Portenta H7 是 Arduino 推出的一款非对称架构高性能处理器，为了充分发挥硬件性能，\\社区尝试在 H7 上运行 FreeRTOS。
+  \item Portenta H7 是 Arduino 推出的一款非对称架构高性能处理器，为了充分发挥硬件性能，社区尝试在 H7 上运行 FreeRTOS。
   \item 与硬件、软件、市场等多个部门合作，负责实现对 FreeRTOS 的移植与对 Arduino Framework 框架的支持。
   \item 技术栈 C，C++，FreeRTOS，Arduino Framework
 \end{itemize}
 
+% 续页提示
 \continue
-
+% 换页
 \clearpage
 
 \datedsubsection{\textbf{Alibaba Summer of Code | 为 AliOS Things 实现对 Arduino 框架的支持} 负责人}{2019.6 - 2019.9}
@@ -90,7 +90,7 @@
 \datedsubsection{\textbf{基于机器学习技术的数学公式识别研究} 负责人}{2019.12 - 2020.6}
 \begin{itemize}
   \item 使用卷积神经网络实现数学公式识别。
-  \item 负责从无到有的设计，研发，流程图及开发文档，用两个月的时间独立开发了初版的 APP，\\集成了公式识别、数据跨平台同步等功能。
+  \item 负责从无到有的设计，研发，流程图及开发文档，用两个月的时间独立开发了初版的 APP，集成了公式识别、数据跨平台同步等功能。
   \item 作为软件开发团队的核心成员，为 APP 开发提供高质量的接口封装。对 RESTful 有实践经验。
 \end{itemize}
 
