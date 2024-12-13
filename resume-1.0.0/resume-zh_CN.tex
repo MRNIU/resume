@@ -20,13 +20,21 @@
 \section{技术能力}
 \begin{itemize}[parsep=0.2ex]
   \item \textbf{编程语言}: C/C++，Python，Go，Shell，x86 ASM，ARM ASM，RISCV ASM
-  \item \textbf{操作系统与工具}: Linux/macOS/Windows，Git，Docker，CMake，\LaTeX
+  \item \textbf{操作系统与工具}: Linux/macOS/Windows/QNX，Git，Docker，CMake，\LaTeX
   \item \textbf{DevOps}: Travis CI，GitHub Action，Jenkins
   \item \textbf{领域}: Embedded System，Kernel，Edge Computing，Compiler，Computer Graphics
 \end{itemize}
 
 \section{项目经历}
-\datedsubsection{\textbf{ThoughtWorks | 某电力行业央企控股集团 边缘计算应用开发} 资深开发工程师}{2023.6 - 至今}
+\datedsubsection{\textbf{ThoughtWorks | 某德系车企 车机中间件开发} 资深开发工程师}{2024.4 - 至今}
+\begin{itemize}
+  \item 该企业旧有车载系统为 QNX+RichOS 架构，不能适应以智能化、娱乐化为主的发展方向。本项目使用 QNX+Android 的技术路线进行开发。
+  \item 负责开机阶段的启动流程，确保 vCPU+BSP+QNX+Android 之间的 CAN、ICCSPI、SOMEIP 等链路正常工作。
+  \item 负责开机阶段的性能优化，保证在 SA8295 上电两秒内可以播放开机动画。
+  \item 技术栈 C，C++，ARM，SA8295，QNX，AUTOSAR
+\end{itemize}
+
+\datedsubsection{\textbf{ThoughtWorks | 某电力行业央企控股集团 边缘计算应用开发} 资深开发工程师}{2023.6 - 2024.4}
 \begin{itemize}
   \item 该企业已有的开发流程成本高、效率低，严重影响企业的生产流程，本项目的目标是结合敏捷实践降本增效，带领企业团队熟悉现代开发方式。
   \item 负责实现电力行业标准 645-97/645-07/698-45 协议的事件采集相关功能。
@@ -34,7 +42,7 @@
   \item 技术栈 C，C++，ARM
 \end{itemize}
 
-\datedsubsection{\textbf{ThoughtWorks | 某央企控股集团 可观测审计文件系统} 资深开发工程师 | 负责人}{2021.10 - 至今}
+\datedsubsection{\textbf{ThoughtWorks | 某央企控股集团 可观测审计文件系统} 资深开发工程师 | 负责人}{2021.10 - 2023.6}
 \begin{itemize}
   \item 该项目主要是针对信创平台（中科方德、银河麒麟、x86、龙芯 MIPS、ARM64）实现基于 fuse 的可观测审计系统。
   \item 该集团业务有严格的保密需求，要求监控文件的打开、关闭、读写、复制粘贴等操作，对加密文件需要支持用户无感知的透明加解密方案。
@@ -44,11 +52,6 @@
   \item 负责实现用户操作审计。
   \item 负责实现文件系统透明加解密功能。
   \item 技术栈 Golang，C，C++，fuse，X11，linux，systemd，gtk，wps-plugins
-\end{itemize}
-
-\datedsubsection{\textbf{开源软件供应链点亮计划 | Simple-XX} 社区负责人 | 学生导师}{2020.6 - 至今}
-\begin{itemize}
-  \item 由中科院软件所与 openEuler 社区主办，负责与社区与主办方的交流，指导学生完成开发工作。
 \end{itemize}
 
 \datedsubsection{\textbf{ThoughtWorks | 国内某智能穿戴设备研发} 资深开发工程师}{2021.9 - 2021.10}
@@ -67,6 +70,11 @@
   \item Portenta H7 是 Arduino 推出的一款非对称架构高性能处理器，为了充分发挥硬件性能，社区尝试在 H7 上运行 FreeRTOS。
   \item 与硬件、软件、市场等多个部门合作，负责实现对 FreeRTOS 的移植与对 Arduino Framework 框架的支持。
   \item 技术栈 C，C++，FreeRTOS，Arduino Framework
+\end{itemize}
+
+\datedsubsection{\textbf{开源软件供应链点亮计划 | Simple-XX} 社区负责人 | 学生导师}{2020.6 - 至今}
+\begin{itemize}
+  \item 由中科院软件所与 openEuler 社区主办，负责与社区与主办方的交流，指导学生完成开发工作。
 \end{itemize}
 
 % 续页提示
@@ -116,6 +124,7 @@
 
 \section{所获奖项/其它} 
 \begin{tabular}{rcl}
+    2024         & 指导学生完成 SimpleRenderer 渲染功能开发 & 开源软件供应链点亮计划 \\
     2023         & 指导学生完成 SimpleKernel UEFI 启动支持 & 开源软件供应链点亮计划 \\
     2021         & 优胜奖 & 全国大学生系统能力大赛 \\ 
     2021         & & 软件著作权 \\
