@@ -12,69 +12,73 @@
 % 不显示页码
 \pagenumbering{gobble}
 
-\namesection{牛}{志}{宏}{\urlstyle{same}\href{zone.niuzh@hotmail.com}{zone.niuzh@hotmail.com} | 156 6720 0505 | Github/MRNIU | UTC+8}
+\namesection{牛}{志}{宏}{\urlstyle{same}\href{zhihong@nzhnb.com}{zhihong@nzhnb.com} | 156 6720 0505 | Github/MRNIU | UTC+8}
 
 \section{教育背景}
 \datedsubsection{\textbf{西安石油大学} 计算机科学与技术 \textit{工学学士}}{2017.9}
 
 \section{技术能力}
 \begin{itemize}[parsep=0.2ex]
-  \item \textbf{编程语言}: C/C++，Python，Go，Shell，x86 ASM，ARM ASM，RISCV ASM
-  \item \textbf{操作系统与工具}: Linux/macOS/Windows/QNX，Git，Docker，CMake，\LaTeX
-  \item \textbf{DevOps}: Travis CI，GitHub Action，Jenkins
-  \item \textbf{领域}: Embedded System，Kernel，Edge Computing，Compiler，Computer Graphics
+  \item \textbf{编程语言}: C/C++, Python, Go, Shell, x86/ARM/RISC-V ASM
+  \item \textbf{操作系统与平台}: Linux (内核/嵌入式), QNX, Android, macOS/Windows, AUTOSAR
+  \item \textbf{工具链}: Git, Docker, CMake, \LaTeX, CI/CD (Jenkins, GitHub Actions, Travis CI)
+  \item \textbf{专业领域}: 嵌入式系统开发、操作系统内核、边缘计算、编译器、计算机图形学
 \end{itemize}
 
 \section{项目经历}
+\datedsubsection{\textbf{雳泊动力 智能机器人架构} 软件架构工程师}{2025.6 - 至今}
+\begin{itemize}
+  \item \textbf{负责轮腿/人形机器人电子电气架构及软件系统设计}, 支撑具身智能应用落地。
+  \item \textbf{设计并实现基于 Docker 的跨平台(OSX/Win)定制化交叉编译环境}, 显著提升团队开发效率。
+  \item \textbf{技术栈}: C/C++, ARM 嵌入式开发, 工业总线 (CAN/EtherCAT), 具身智能框架
+\end{itemize}
+
 \datedsubsection{\textbf{ThoughtWorks | 某德系车企 车机中间件开发} 资深开发工程师}{2024.4 - 至今}
 \begin{itemize}
-  \item 该企业旧有车载系统为 QNX+RichOS 架构，不能适应以智能化、娱乐化为主的发展方向。本项目使用 QNX+Android 的技术路线进行开发。
-  \item 负责开机阶段的启动流程，确保 vCPU+BSP+QNX+Android 之间的 CAN、ICCSPI、SOMEIP 等链路正常工作。
-  \item 负责开机阶段的性能优化，保证在 SA8295 上电两秒内可以播放开机动画。
-  \item 技术栈 C，C++，ARM，SA8295，QNX，AUTOSAR
+  \item \textbf{下一代 QNX+Android 智能座舱中间件开发}, 取代旧有 QNX+RichOS 架构, 实现智能化/娱乐化升级
+  \item \textbf{基于高通 VIDC 实现 4K H.264/H.265 超清视频硬解码}, 保障 60fps 高帧率流畅播放
+  \item \textbf{设计并实现高性能 SOME/IP 服务发现与调用框架}, 高效打通 QNX-Android 跨系统通信(CAN/ICCSPI)
+  \item \textbf{深度优化系统启动流程}: 实现 SA8295 平台 \textbf{2秒冷启动并播放开机动画}(行业领先水平)
+  \item \textbf{主导关键问题排查与修复}: 深入分析开机阶段软硬件问题, 推动跨团队协作解决核心缺陷
+  \item \textbf{全程把控项目进度与质量}, 确保车机系统按计划高质量量产交付
+  \item \textbf{技术栈}: C/C++, ARM 嵌入式开发, SA8295, QNX, AUTOSAR
 \end{itemize}
 
 \datedsubsection{\textbf{ThoughtWorks | 某电力行业央企控股集团 边缘计算应用开发} 资深开发工程师}{2023.6 - 2024.4}
 \begin{itemize}
-  \item 该企业已有的开发流程成本高、效率低，严重影响企业的生产流程，本项目的目标是结合敏捷实践降本增效，带领企业团队熟悉现代开发方式。
-  \item 负责实现电力行业标准 645-97/645-07/698-45 协议的事件采集相关功能。
-  \item 负责大规模高准度低时延采集系统架构设计。
-  \item 技术栈 C，C++，ARM
+  \item \textbf{主导重构高精度低时延电力数据采集系统}, 解决原有系统高成本低效痛点
+  \item \textbf{设计并开发支持国标 645-97/645-07/698-45 协议的边缘事件采集框架}
+  \item \textbf{技术栈}: C/C++, ARM 嵌入式开发
 \end{itemize}
 
-\datedsubsection{\textbf{ThoughtWorks | 某央企控股集团 可观测审计文件系统} 资深开发工程师 | 负责人}{2021.10 - 2023.6}
+\datedsubsection{\textbf{ThoughtWorks | 某央企控股集团 可观测审计文件系统} 技术负责人 | 负责人}{2021.10 - 2023.6}
 \begin{itemize}
-  \item 该项目主要是针对信创平台（中科方德、银河麒麟、x86、龙芯 MIPS、ARM64）实现基于 fuse 的可观测审计系统。
-  \item 该集团业务有严格的保密需求，要求监控文件的打开、关闭、读写、复制粘贴等操作，对加密文件需要支持用户无感知的透明加解密方案。
-  \item 参与项目的全流程，包括需求评审、设计评审，制定测试计划，设计和执行测试用例，及测试回归，进行缺陷跟踪和软件质量分析等。
-  \item 负责实现基于 fuse 的用户态文件系统监控审计全功能开发。
-  \item 负责实现基于 X11 的用户操作监控功能。
-  \item 负责实现用户操作审计。
-  \item 负责实现文件系统透明加解密功能。
-  \item 技术栈 Golang，C，C++，fuse，X11，linux，systemd，gtk，wps-plugins
+  \item \textbf{主导设计并实现信创平台(麒麟/方德/x86/龙芯/ARM64)全链路文件审计系统}, 满足军工级保密要求
+  \item \textbf{基于 FUSE 开发内核态文件操作监控模块}, 实时追踪文件读写、复制、加密等敏感行为
+  \item \textbf{设计实现 X11 桌面操作审计模块}, 完成用户操作行为全链路追踪
+  \item \textbf{实现透明文件加解密引擎}, 保障涉密文件零感知安全防护
+  \item \textbf{技术栈}: Golang, C/C++, FUSE, X11, Linux Kernel, GTK
 \end{itemize}
 
 \datedsubsection{\textbf{ThoughtWorks | 国内某智能穿戴设备研发} 资深开发工程师}{2021.9 - 2021.10}
 \begin{itemize}
-  \item 该项目主要是对某国内厂商已有的穿戴设备上的应用进行重构。
-  \item 在以往的开发中，此厂商主要采用 c++ 和 mvp 架构来开发自己的手表应用，但是随着产品的增多，
-    这种架构面临着维护困难，冲突多，开发缓慢等问题。为此开发了一套 MVVM 架构的手表应用开发框架，
-    页面基于 html/css 开发，后端封装可复用的组件，整个项目需要不断的催熟框架以及重构应用。
-  \item 负责应用的重构，前端编写，以及后端数据联调。
-  \item 与框架团队交流，催熟组件，bug修复。
-  \item 技术栈 C++，Open HarmonyOS
+  \item \textbf{智能穿戴设备应用架构重构}: 针对产品线扩展后 C++ MVP 架构的维护困难、冲突多、开发慢问题, 设计并实现基于 MVVM 架构的应用开发框架
+  \item \textbf{核心工作}: 应用重构、前端(HTML/CSS)开发、后端数据联调、框架组件化与功能迭代、缺陷修复
+  \item 与框架团队交流, 催熟组件, bug修复
+  \item \textbf{技术栈}: C++, Open HarmonyOS, ARM 嵌入式开发
 \end{itemize}
 
 \datedsubsection{\textbf{Google Summer of Code | 为 Arduino Portenta H7 移植 FreeRTOS} 负责人}{2020.6 - 2020.9}
 \begin{itemize}
-  \item Portenta H7 是 Arduino 推出的一款非对称架构高性能处理器，为了充分发挥硬件性能，社区尝试在 H7 上运行 FreeRTOS。
-  \item 与硬件、软件、市场等多个部门合作，负责实现对 FreeRTOS 的移植与对 Arduino Framework 框架的支持。
-  \item 技术栈 C，C++，FreeRTOS，Arduino Framework
+  \item \textbf{主导将 FreeRTOS 移植至 Arduino Portenta H7 (非对称多核架构)}, 充分挖掘硬件潜力
+  \item \textbf{与硬件、软件、市场团队协作}, 确保 FreeRTOS 与 Arduino Framework 的兼容性支持
+  \item \textbf{技术栈}: C/C++, FreeRTOS, Arduino Framework
 \end{itemize}
 
 \datedsubsection{\textbf{开源软件供应链点亮计划 | Simple-XX} 社区负责人 | 学生导师}{2020.6 - 至今}
 \begin{itemize}
-  \item 由中科院软件所与 openEuler 社区主办，负责与社区与主办方的交流，指导学生完成开发工作。
+  \item \textbf{负责社区管理与对外联络}(中科院软件所/openEuler社区)
+  \item \textbf{指导学生完成社区项目开发工作}
 \end{itemize}
 
 % 续页提示
@@ -84,40 +88,35 @@
 
 \datedsubsection{\textbf{Alibaba Summer of Code | 为 AliOS Things 实现对 Arduino 框架的支持} 负责人}{2019.6 - 2019.9}
 \begin{itemize}
-  \item 首届 ASoC，共有 400+ 位申请学生，其中 21 位被阿里巴巴接收。
-  \item 与社区紧密合作，为 AliOS-Things 实现对 Arduino 框架及其标准库的支持。
-  \item AliOS Things 是 AliOS 家族旗下、面向 IoT 领域的、高可伸缩的物联网操作系统。
-  \item 在本项目前，Things 维护了一套自己的接口，不利于大范围推广。
-  \item 针对该痛点调研市场状况，为与 Things 配套的 Developer Kit 开发板量身定制了 Things-Arduino 方案。
-  \item 负责实现对 Things-Arduino HAL 的移植。
-  \item 负责实现对 Arduino 框架的支持。
-  \item 负责实现对 Arduino 标准库的支持。
-  \item 技术栈 C，C++，Embedded Kernel
+  \item \textbf{从 400+ 申请者中脱颖而出}, 成为 21 位入选者之一
+  \item \textbf{主导为 AliOS-Things 物联网操作系统适配 Arduino 框架及标准库}, 解决其原生接口生态受限问题
+  \item \textbf{核心工作}: 完成 HAL 层移植、Arduino 框架核心功能支持、标准库集成
+  \item \textbf{技术栈}: C/C++, Embedded Kernel (AliOS Things)
 \end{itemize}
 
 \datedsubsection{\textbf{基于机器学习技术的数学公式识别研究} 负责人}{2019.12 - 2020.6}
 \begin{itemize}
-  \item 使用卷积神经网络实现数学公式识别。
-  \item 负责从无到有的设计，研发，流程图及开发文档，用两个月的时间独立开发了初版的 APP，集成了公式识别、数据跨平台同步等功能。
-  \item 作为软件开发团队的核心成员，为 APP 开发提供高质量的接口封装。对 RESTful 有实践经验。
+  \item \textbf{使用卷积神经网络(CNN)实现数学公式识别}
+  \item \textbf{独立完成应用原型(APP)设计、开发与实现}, 集成公式识别、跨平台数据同步功能
+  \item \textbf{负责核心接口封装与 RESTful API 设计}
 \end{itemize}
 
 \datedsubsection{\textbf{Simple-XX 社区} 发起人}{2019.12 - 2020.6}
 \begin{itemize}
-  \item 专注于底层基础软件，包括处理器、编译器、操作系统、计算机图形学、物理仿真等。
-  \item 规划社区发展方向，处理社区对外事务。
-  \item 维持社区运行，保证社区良好氛围。
+  \item \textbf{创立并运营专注于底层基础软件(处理器/编译器/操作系统/图形学/物理仿真)的开发者社区}
+  \item \textbf{负责社区战略规划、对外事务处理及日常运营维护}, 营造积极技术氛围
 \end{itemize}
 
 \section{开源贡献}
 \begin{tabular}{ll}
-  Homebrew/homebrew-core & 内核开发相关工具链 \\
-  Simple-XX/SimpleKernel & riscv/arm/x64 操作系统内核 \\
-  Simple-XX/SimpleCompiler & C-sub 编译器 \\
-  Simple-XX/SimpleRenderer & 软件光栅渲染器 \\
-  Simple-XX/SimplePhysicsEngine & 流体模拟物理引擎 \\
-  EugeneLiu/translationCSAPP & CMU 15-213 课程视频翻译计划，参与翻译校对 \\
-  xitu/gold-miner & 参与英文技术文章、tensorflow 官方文档的翻译校对 \\
+  \textbf{U-Boot} & 修复多起 RISCV64/ARM 架构下内核启动问题(ELF 加载、参数传递、FIT 启动)\\
+  \textbf{Homebrew/homebrew-core} & 内核开发相关工具链 \\
+  \textbf{Simple-XX/SimpleKernel} & riscv/arm/x64 操作系统内核 \\
+  \textbf{Simple-XX/SimpleCompiler} & C-sub 编译器 \\
+  \textbf{Simple-XX/SimpleRenderer} & 软件光栅渲染器 \\
+  \textbf{Simple-XX/SimplePhysicsEngine} & 流体模拟物理引擎 \\
+  \textbf{EugeneLiu/translationCSAPP} & CMU 15-213 课程视频翻译计划, 参与翻译校对 \\
+  \textbf{xitu/gold-miner} & 参与英文技术文章、tensorflow 官方文档的翻译校对 \\
   More... & 见 Github/MRNIU
 \end{tabular}
 \sectionsep
@@ -127,7 +126,7 @@
     2024         & 指导学生完成 SimpleRenderer 渲染功能开发 & 开源软件供应链点亮计划 \\
     2023         & 指导学生完成 SimpleKernel UEFI 启动支持 & 开源软件供应链点亮计划 \\
     2021         & 优胜奖 & 全国大学生系统能力大赛 \\ 
-    2021         & & 软件著作权 \\
+    2021         & 拍易得软件 & 软件著作权 \\
     2021         & 指导学生完成 SimpleCompiler 编译器架构 & 开源软件供应链点亮计划 \\
     2021         & 指导学生完成 SimpleKernel RISCV 架构多核支持 & 开源软件供应链点亮计划 \\
     2021         & 指导学生完成 Simple 项目文档编写 & 开源软件供应链点亮计划 \\
@@ -135,12 +134,11 @@
     2020         & 指导学生完成 SimpleKernel 多任务调度系统 & 开源软件供应链点亮计划 \\
     2020         & 指导学生完成 SimpleKernel 内存管理优化 & 开源软件供应链点亮计划 \\
     2020         & 优秀开发者 & openEuler 高校开发者大赛 \\ 
-    2020         & & 开源软件供应链 2020 峰会 \\
-    2020         & & 中文学生开源年会 \\
-    2019         & & 软件著作权 \\
-    2019         & & 国家级创新创业训练计划项目 \\
+    2020         & 讲者 & 中文学生开源年会 \\
+    2019         & LaTeXocr 软件 & 软件著作权 \\
+    2019         & 基于机器学习技术的数学公式识别研究 & 国家级创新创业训练计划项目 \\
     2019         & 银奖    & 第五届中国“互联网+”大学生创新创业大赛陕西赛区复赛 \\
-    2018	       & 二等奖  & 第十二届 iCAN 国际创新创业大赛中国总决赛 \\
+    2018         & 二等奖  & 第十二届 iCAN 国际创新创业大赛中国总决赛 \\
 \end{tabular}
 \sectionsep
 
