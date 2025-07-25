@@ -26,11 +26,30 @@
 \end{itemize}
 
 \section{项目经历}
+\datedsubsection{\textbf{zephyr} MAINTAINER}{2025.7 - 至今}
+\begin{itemize}
+  \item \textbf{Orange Pi 5 Ultra RK3588 主板移植}: 主导为 Zephyr RTOS 添加 Orange Pi 5 Ultra 开发板完整支持, 包括硬件配置、外设定义和构建系统集成
+  \item \textbf{RK3588 SoC 架构支持}: 实现 Rockchip RK3588 多核 SoC 完整支持, 包括 ARM Cortex-A55/A76 异构架构、MMU 配置和电源管理
+  \item \textbf{设备树和时钟绑定开发}: 开发完整的设备树文件和 RK3588 时钟绑定, 支持 CPU 缓存属性、SCMI 协议和硬件特性定义
+  \item \textbf{开源项目代码质量把控}: 响应社区代码审查, 修复格式规范、代码对齐和命名约定问题, 确保代码质量符合 Linux Foundation 项目标准
+  \item \textbf{技术栈}: C, ARM64 嵌入式开发, Zephyr RTOS, 设备树, SCMI, 多核架构
+\end{itemize}
+
 \datedsubsection{\textbf{雳泊动力 智能机器人架构} 软件架构工程师}{2025.6 - 至今}
 \begin{itemize}
-  \item \textbf{负责轮腿/人形机器人电子电气架构及软件系统设计}, 支撑具身智能应用落地。
-  \item \textbf{设计并实现基于 Docker 的跨平台(OSX/Win)定制化交叉编译环境}, 显著提升团队开发效率。
+  \item \textbf{负责轮腿/人形机器人电子电气架构及软件系统设计}, 支撑具身智能应用落地
+  \item \textbf{设计并实现基于 Docker 的跨平台(OSX/Win)定制化交叉编译环境}, 显著提升团队开发效率
   \item \textbf{技术栈}: C/C++, ARM 嵌入式开发, 工业总线 (CAN/EtherCAT), 具身智能框架
+\end{itemize}
+
+\datedsubsection{\textbf{U-Boot} MAINTAINER}{2025.3 - 至今}
+\begin{itemize}
+  \item \textbf{主板适配与驱动开发}: 主导Orange Pi 5 Ultra (RK3588)完整U-Boot移植, 包括设备树配置、启动配置及驱动适配
+  \item \textbf{多架构启动协议优化}: 修复x86/x86\_64平台 setup.bin 缺失场景下的内核入口点获取问题, 提升启动兼容性
+  \item \textbf{RISC-V SMP 启动支持}: 实现 RISC-V 架构下 ELF 内核的 SMP hartid 和 DTB 地址传递, 符合现代多核启动协议
+  \item \textbf{ELF格式支持增强}: 扩展 bootm 命令, 完善 ELF 应用程序参数传递和镜像加载机制
+  \item \textbf{上游贡献}: 5 个补丁被 U-Boot 主线接受, 解决多起跨架构内核启动关键问题
+  \item \textbf{技术栈}: C, ARM/RISC-V 嵌入式开发, U-Boot, 设备树, 启动协议
 \end{itemize}
 
 \datedsubsection{\textbf{ThoughtWorks | 某德系车企 车机中间件开发} 资深开发工程师}{2024.4 - 至今}
@@ -38,7 +57,7 @@
   \item \textbf{下一代 QNX+Android 智能座舱中间件开发}, 取代旧有 QNX+RichOS 架构, 实现智能化/娱乐化升级
   \item \textbf{基于高通 VIDC 实现 4K H.264/H.265 超清视频硬解码}, 保障 60fps 高帧率流畅播放
   \item \textbf{设计并实现高性能 SOME/IP 服务发现与调用框架}, 高效打通 QNX-Android 跨系统通信(CAN/ICCSPI)
-  \item \textbf{深度优化系统启动流程}: 实现 SA8295 平台 \textbf{2秒冷启动并播放开机动画}(行业领先水平)
+  \item \textbf{深度优化系统启动流程}: 实现 SA8295 平台 \textbf{2 秒冷启动并播放开机动画}(行业领先水平)
   \item \textbf{主导关键问题排查与修复}: 深入分析开机阶段软硬件问题, 推动跨团队协作解决核心缺陷
   \item \textbf{全程把控项目进度与质量}, 确保车机系统按计划高质量量产交付
   \item \textbf{技术栈}: C/C++, ARM 嵌入式开发, SA8295, QNX, AUTOSAR
@@ -64,7 +83,7 @@
 \begin{itemize}
   \item \textbf{智能穿戴设备应用架构重构}: 针对产品线扩展后 C++ MVP 架构的维护困难、冲突多、开发慢问题, 设计并实现基于 MVVM 架构的应用开发框架
   \item \textbf{核心工作}: 应用重构、前端(HTML/CSS)开发、后端数据联调、框架组件化与功能迭代、缺陷修复
-  \item 与框架团队交流, 催熟组件, bug修复
+  \item 与框架团队交流, 催熟组件, bug 修复
   \item \textbf{技术栈}: C++, Open HarmonyOS, ARM 嵌入式开发
 \end{itemize}
 
@@ -80,11 +99,6 @@
   \item \textbf{负责社区管理与对外联络}(中科院软件所/openEuler社区)
   \item \textbf{指导学生完成社区项目开发工作}
 \end{itemize}
-
-% 续页提示
-\continue
-% 换页
-\clearpage
 
 \datedsubsection{\textbf{Alibaba Summer of Code | 为 AliOS Things 实现对 Arduino 框架的支持} 负责人}{2019.6 - 2019.9}
 \begin{itemize}
@@ -109,7 +123,6 @@
 
 \section{开源贡献}
 \begin{tabular}{ll}
-  \textbf{U-Boot} & 修复多起 RISCV64/ARM 架构下内核启动问题(ELF 加载、参数传递、FIT 启动)\\
   \textbf{Homebrew/homebrew-core} & 内核开发相关工具链 \\
   \textbf{Simple-XX/SimpleKernel} & riscv/arm/x64 操作系统内核 \\
   \textbf{Simple-XX/SimpleCompiler} & C-sub 编译器 \\
